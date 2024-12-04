@@ -43,6 +43,7 @@ PODS:
     - React-RCTText (= 0.76.3)
     - React-RCTVibration (= 0.76.3)
   - React-callinvoker (0.76.3)
+  - React-Codegen (0.1.0)
   - React-Core (0.76.3):
     - glog
     - hermes-engine
@@ -1509,6 +1510,13 @@ PODS:
     - React-logger (= 0.76.3)
     - React-perflogger (= 0.76.3)
     - React-utils (= 0.76.3)
+  - RNIap (12.15.7):
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - ReactCommon/turbomodule/core
   - SocketRocket (0.7.1)
   - Yoga (0.0.0)
 
@@ -1577,10 +1585,12 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNIap (from `../node_modules/react-native-iap`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - React-Codegen
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1709,6 +1719,8 @@ EXTERNAL SOURCES:
     :path: build/generated/ios
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNIap:
+    :path: "../node_modules/react-native-iap"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1725,6 +1737,7 @@ SPEC CHECKSUMS:
   RCTTypeSafety: 6b98db8965005d32449605c0d005ecb4fee8a0f7
   React: 8077bf7c185afb515be82518507e16f71a247a5e
   React-callinvoker: 519eee9520727805e2867a6d8dad4ebbeed543db
+  React-Codegen: 4b8b4817cea7a54b83851d4c1f91f79aa73de30a
   React-Core: e364ceda7d086c7d14adeec0eb880a90073e3dde
   React-CoreModules: 291be650024d9db086c95fd1d7e7d9607c6de62b
   React-cxxreact: 5cf17d13ca0fc0734e1bb0ed9615d1d1fc45ef78
@@ -1775,8 +1788,9 @@ SPEC CHECKSUMS:
   React-utils: 2bcaf4f4dfe361344bce2fae428603d518488630
   ReactCodegen: ae99a130606068ed40d1d9c0d5f25fda142a0647
   ReactCommon: 89c87b343deacc8610b099ac764848f0ce937e3e
+  RNIap: 7c54103f82fa3e561c2b78ea5ad14f8345224645
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
-  Yoga: f6dc1b6029519815d5516a1241821c6a9074af6d
+  Yoga: 3deb2471faa9916c8a82dda2a22d3fba2620ad37
 
 PODFILE CHECKSUM: 6f2ba303213d458d04ef80ab9c62059d4f46cc27
 

@@ -78,12 +78,26 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.zurri"
+
+    flavorDimensions "appstore"
+    productFlavors {
+        googlePlay {
+            dimension "appstore"
+            missingDimensionStrategy "store", "play"
+    }
+    amazon {
+        dimension "appstore"
+        missingDimensionStrategy "store", "amazon"
+    }
+    }
+
     defaultConfig {
         applicationId "com.zurri"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        missingDimensionStrategy "store", "play"
     }
     signingConfigs {
         debug {
